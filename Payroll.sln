@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3B45F7A7-3A8C-4AFD-82FB-3FD43B344992}"
+	ProjectSection(SolutionItems) = preProject
+		PayrollSqlScripts.sql = PayrollSqlScripts.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeDAL", "EmployeeDAL\EmployeeDAL.csproj", "{C171B9D2-D9CB-42C8-A8FD-D2CFE326894E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeWebApp", "EmployeeWebApp\EmployeeWebApp.csproj", "{B44EF27B-7984-4D3F-B216-B55891DEAE39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C171B9D2-D9CB-42C8-A8FD-D2CFE326894E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C171B9D2-D9CB-42C8-A8FD-D2CFE326894E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C171B9D2-D9CB-42C8-A8FD-D2CFE326894E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C171B9D2-D9CB-42C8-A8FD-D2CFE326894E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B44EF27B-7984-4D3F-B216-B55891DEAE39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B44EF27B-7984-4D3F-B216-B55891DEAE39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B44EF27B-7984-4D3F-B216-B55891DEAE39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B44EF27B-7984-4D3F-B216-B55891DEAE39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {250F84DA-43FF-4AB7-8713-C2C67F40CC5F}
+	EndGlobalSection
+EndGlobal
