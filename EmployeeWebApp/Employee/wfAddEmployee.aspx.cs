@@ -62,6 +62,7 @@ namespace EmployeeWebApp.Employee
             catch (Exception ex)
             {
                 LblResult.Text = ex.Message;
+                throw;
             }
 
             LblResult.Visible = true;

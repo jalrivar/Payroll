@@ -2,10 +2,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <link href="../Content/jquery.datetimepicker.min.css" rel="stylesheet" />
-    <script src="../Scripts/jquery-3.4.1.min.js"></script>
-    <script src="../Scripts/jquery.mask.min.js"></script>
-    <script src="../Scripts/jquery.datetimepicker.full.min.js"></script>
-    <script src="../Scripts/jquery.formats.js"></script>
     <asp:ScriptManagerProxy ID="ScriptManagerProxy1" runat="server"></asp:ScriptManagerProxy>
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>

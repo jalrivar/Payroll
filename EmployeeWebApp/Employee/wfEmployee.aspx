@@ -37,7 +37,7 @@
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="Hire Date">
                         <ItemTemplate>
-                            <asp:Label ID="LblHireDate" runat="server" Text='<%# Bind("HireDate") %>'></asp:Label>
+                            <asp:Label ID="LblHireDate" runat="server" Text='<%# Bind("HireDate",  "{0:MM/dd/yyyy}") %>'></asp:Label>
                         </ItemTemplate>
                     </asp:TemplateField>
 
