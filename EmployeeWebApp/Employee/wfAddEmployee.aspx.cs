@@ -16,6 +16,7 @@ namespace EmployeeWebApp.Employee
             {
                 try
                 {
+                    //Fill the form if editing.
                     var employee = new EmployeeDAL.EmployeeContext().SpGetEmployeeById(Convert.ToInt32(Request.Params["id"]));
                     TxtEmployeeId.Text = employee.EmployeeId.ToString();
                     TxtFirstName.Text = employee.FirstName;
@@ -36,6 +37,7 @@ namespace EmployeeWebApp.Employee
         {
             try
             {
+                //Creating employee entity.
                 var employee = new EmployeeDAL.Models.Employee
                 {
                     EmployeeId = Convert.ToInt32(TxtEmployeeId.Text),
@@ -46,8 +48,10 @@ namespace EmployeeWebApp.Employee
                     HireDate = Convert.ToDateTime(TxtHireDate.Text, new CultureInfo("en-US"))
                 };
 
+                //Add or update employee.
                 new EmployeeDAL.EmployeeContext().SpEmployee(employee);
 
+                //Clear form
                 TxtEmployeeId.Text = "";
                 TxtFirstName.Text = "";
                 TxtLastName.Text = "";
@@ -70,6 +74,7 @@ namespace EmployeeWebApp.Employee
 
         protected void BtnBack_Click(object sender, EventArgs e)
         {
+            //Go to list of employee.
             Response.Redirect("wfEmployee");
         }
     }
